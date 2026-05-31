@@ -2,6 +2,7 @@ CREATE DATABASE IF NOT EXISTS moex;
 
 CREATE TABLE IF NOT EXISTS moex.raw_quotes
 (
+    market_time DateTime,
     collected_at DateTime,
     ticker String,
     last_price Nullable(Float64),
